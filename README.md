@@ -13,4 +13,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - 1)open the cmd on the project path  then write "npm install" in the cmd 
 - 2)open another cmd on the project path then write "json-server --watch db.json" Note: keep it running
 - 3)to run and view the project  write on the first cmd "ng serve -o" the project will open on your default browser
-## you must have an angular environment in ypur pc..
+## you must have an angular environment in your pc..
