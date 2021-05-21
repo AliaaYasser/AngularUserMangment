@@ -1,0 +1,33 @@
+<td>
+   {{ user.id}}
+</td>
+
+<td>
+        {{user.name| custom}}
+
+    </td>
+    <td>
+   {{ user.age}}
+
+    </td>
+    <td>
+
+   
+
+   
+        {{user.email }}
+   
+    </td>
+<td>
+        <a routerLink="../students/{{user.id}}" class="btn btn-success" > Details</a> 
+</td>
+<td>
+   
+    <a href="#"  (click)="deleteUser(user.id)"  class="btn btn-danger" title="Delete" >Delete</a>
+    </td>
+    <td>
+       
+        <a routerLink="../Update/{{user.id}}" class="btn btn-primary" >Update</a>
+        </td>
+
+    

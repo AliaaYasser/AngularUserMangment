@@ -1,0 +1,17 @@
+
+<form [formGroup]="ourValidationForm" (submit)="addUser(name.value,age.value,email.value)">
+    <div class="form-group">
+        <label for="exampleInputName">Name</label>
+        <input type="text" class="form-control" [class.c]="!NameValid" id="exampleInputName" placeholder="Name" formControlName="Name" #name>
+      </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  #email placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputAge">Age </label>
+        <input type="number" class="form-control" id="exampleInputAge" [class.c]="!AgeValid" formControlName="Age"  #age>
+      </div>
+    <button *ngIf="AgeValid&&NameValid"  type="submit" class="btn btn-primary">Submit</button>
+  </form>
